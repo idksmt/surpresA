@@ -1,0 +1,19 @@
+@media only screen and (max-width: 600px) {
+  /* Estilos para telas menores que 600 pixels de largura */
+}
+
+.card {
+    flex-direction: column-reverse;
+    max-width: 430px;
+}
+
+.answer {
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem {
+    width: 100%;
+    justify-content: center;
+}

@@ -1,0 +1,148 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    background-color: #ffa5d0;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 600px;
+    width: 600px;
+
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.card > .question p {
+    font-size: 30px;
+    font-family: montserrat;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.btn-yes, .btn-no {
+    height: 48px;
+    width: 100px;
+
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-yes {
+    background-color: #9AFF9A;
+}
+
+.btn-no {
+    background-color: #9AFF9A;
+}
+
+.answer > p {
+    font-size: 48px;
+    font-family: montseerat;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #FF6EB4;
+    text-shadow: 1px 1px #000;
+}
+
+.answer {
+    display: none;
+    background-image: url(src/imagens/implorando.png);
+    background-size: 50px;
+    background-position: center;
+    width: 70%;
+    height: 35%;
+    position: static;
+    z-index: 0;
+}
+
+@media only screen and (max-width: 400px) {
+    .answer {
+        background-image: url(src/imagens/implorando.png);
+        align-items: center;
+        justify-content: space-between;
+        width: 50%;
+        height: 35%;
+    }
+
+    .answer > p {
+        font-size: 48px;
+        font-family: montseerat;
+        align-items: center;
+        justify-content: left;
+        font-weight: bold;
+        color: #FF6EB4;
+        text-shadow: 1px 1px #000;
+    }
+    
+    .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .card > .question p {
+        font-size: 20px;
+        font-family: montserrat;
+        font-weight: 500;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .answer {
+        background-image: url(src/imagens/implorando.png);
+        align-items: center;
+        justify-content: left;
+        width: 50%;
+        height: 15%;
+    }
+
+    .answer > p {
+        font-size: 48px;
+        font-family: montseerat;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: #FF6EB4;
+        text-shadow: 1px 1px #000;
+    }
+    
+    .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .card > .question p {
+        font-size: 20px;
+        font-family: montserrat;
+        font-weight: 500;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
